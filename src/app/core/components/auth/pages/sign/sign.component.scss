@@ -1,0 +1,37 @@
+@import "../../../../../../sass/base/variables";
+
+:host {
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    //& referencia eu
+    &,
+    label,
+    input {
+      width: 100%;
+      // font-size: 18;
+    }
+
+    label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid $black;
+    }
+
+    svg {
+      width: 30px;
+    }
+    input {
+      height: 50px;
+      border: none;
+      font-size: 18px;
+      &::placeholder{
+        color: $black;
+      }
+    }
+  }
+}
