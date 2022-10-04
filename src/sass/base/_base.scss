@@ -1,0 +1,22 @@
+
+//font Roboto
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+//centraliza filhos do body
+body {
+  height: 100vh;
+  background: url('../../assets/background/Bg.jpg') no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
