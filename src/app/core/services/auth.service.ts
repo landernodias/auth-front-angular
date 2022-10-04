@@ -18,9 +18,11 @@ export class AuthService {
       map((data) => {
         return console.log(data);
       }),
-      catchError((err) => {
+      catchError((e) => {
         // console.log(err);
-        return throwError(() => err.error.message);
+        if( e.error.message) return throwError(() => e.error.message);
+
+        return throwError(() => "No momento não é possivel validar seu login, tente novamente mais tarde! ");
       }),
     );
   }

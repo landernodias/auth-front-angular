@@ -14,7 +14,7 @@ export class SignComponent implements OnInit {
     password: ['', [Validators.required]],
   });
 
-  public msgError !:string; //primeiro ele é vasio depois é uma string
+  public msgError!:string; //primeiro ele é vasio depois é uma string
 
   constructor(
       private formBuilder: FormBuilder,
